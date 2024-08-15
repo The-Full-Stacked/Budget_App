@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dashboard Page -->
+  <div id="dashboard-container" class="dashboard-container">
+    <nav class="navbar">
+      <h1>Expense Tracker Dashboard</h1>
+    </nav>
+    <div class="main-content">
+      <!-- Expense Form Section -->
+      <div class="expense-form-container">
+        <h2>Add Transaction</h2>
+        <form id="expense-form">
+          <input type="text" id="expense-name" placeholder="Expense Name" required>
+          <input type="text" id="description" placeholder="Description">
+          <input type="text" id="category" placeholder="Category">
+          <input type="number" id="amount" placeholder="Amount" required>
+          <select id="type" required>
+            <option value="credit">Credit</option>
+            <option value="debit">Debit</option>
+          </select>
+          <button type="submit">Add Expense</button>
+        </form>
+      </div>
+      
+      <!-- Transaction History and Total Amount Section -->
+      <div class="expense-history-container">
+        <h2>Transaction History</h2>
+        <div id="expense-history"></div>
+        <div id="total-amount"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

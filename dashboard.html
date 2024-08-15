@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Dashboard Container -->
+  <div id="dashboard-container" class="dashboard-container">
+    <h1>Real-Time Expense Tracker</h1>
+
+    <!-- Transaction Form -->
+    <div class="form-container">
+      <h2>Add Transaction</h2>
+      <form id="transaction-form">
+        <input type="text" id="transaction-name" placeholder="Transaction Name" required>
+        <input type="number" id="transaction-amount" placeholder="Amount" required>
+        <select id="transaction-type" required>
+          <option value="credit">Credit</option>
+          <option value="debit">Debit</option>
+        </select>
+        <button type="submit">Add Transaction</button>
+      </form>
+    </div>
+
+    <!-- Transaction History -->
+    <div class="history-container">
+      <h2>Transaction History</h2>
+      <div id="transaction-history"></div>
+    </div>
+
+    <!-- Total Summary -->
+    <div class="summary-container">
+      <h2>Summary</h2>
+      <p id="total-income">Total Income: $0.00</p>
+      <p id="total-expenses">Total Expenses: $0.00</p>
+      <p id="balance">Balance: $0.00</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+  
+  /* Signup Page Container */
+  .signup-container {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Form Container */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Form Styles */
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #33AEFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0062E6;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Dashboard Styles */
+  .dashboard-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #0062E6;
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  /* Main Content Layout */
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Expense Form Styles */
+  .expense-form-container, .expense-history-container {
+    width: 48%;
+    background-color: #f9f9f9;
+   
+  }
